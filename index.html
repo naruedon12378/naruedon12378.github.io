@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garfield - Resume</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Protest+Strike"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      *,
+      *:before,
+      *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 100%;
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+        color: #333332;
+        font-family: "Protest Strike" !important;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.4;
+        text-rendering: optimizeLegibility;
+        background-color: #ffd8c9 !important;
+      }
+
+      .skill-set li:hover {
+        background: #3498db;
+      }
+
+      h1 {
+        color: rgba(0, 0, 0, 0.75);
+      }
+
+      .wrapper {
+        height: 100%;
+      }
+
+      .left {
+        background-color: rgba(0, 0, 0, 0.025);
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+        float: right;
+        height: 100%;
+        margin-left: -1px;
+        min-width: 256px;
+        position: fixed;
+        width: 33.33%;
+      }
+
+      .right {
+        float: right;
+        height: 100%;
+        position: relative;
+        width: 66.66%;
+      }
+
+      .name-hero {
+        background: rgba(0, 0, 0, 0.001);
+        bottom: 0;
+        height: 290px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 85%;
+      }
+
+      .me-img {
+        background: url(https://github.com/naruedon12378.png) no-repeat center
+          center;
+        background-size: 100%;
+        background-position: 0px;
+        border-radius: 100%;
+        height: 150px;
+        margin: 0 auto;
+        position: relative;
+        width: 150px;
+      }
+
+      .name-hero h1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+
+      .name-hero h4 {
+        font-size: 0.9em;
+        text-align: center;
+      }
+
+      .name-hero h1 em {
+        color: rgba(0, 0, 0, 0.3);
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      .name-hero p {
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 0.75em;
+        line-height: 1.5;
+        margin: 0 8px 0 0;
+        text-align: center;
+      }
+
+      .name-hero .name-text {
+        margin: 0 auto;
+        width: 85%;
+      }
+
+      .inner {
+        margin: 0 auto;
+        max-width: 975px;
+        padding: 3em;
+      }
+
+      .inner h1 {
+        font-size: 1.75em;
+      }
+
+      .inner p {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .inner p em {
+        color: rgba(0, 0, 0, 1);
+        font-style: normal;
+      }
+
+      .inner section {
+        margin: 100px auto;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-top: -10px;
+        max-width: 570px;
+        padding: 0;
+      }
+
+      .skill-set li {
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        color: #fff;
+        display: inline-block;
+        list-style: none;
+        margin: 15px 15px 0 0;
+        padding: 10px;
+        text-align: justify;
+      }
+
+      .indented {
+        text-indent: 40px;
+      }
+
+      @media screen and (max-width: 48em) {
+        .right,
+        .left {
+          float: none;
+          position: relative !important;
+          width: 100%;
+          min-height: 500px;
+        }
+
+        .handmade {
+          text-align: center !important;
+          margin-top: 0px !important;
+        }
+
+        @media screen and (max-width: 75em) {
+          body {
+            font-size: 16px;
+          }
+        }
+
+        @media screen and (max-width: 60em) {
+          body {
+            font-size: 14px;
+          }
+        }
+
+        .clearfix:after {
+          content: " ";
+          /* Older browser do not support empty content */
+          visibility: hidden;
+          display: block;
+          height: 0;
+          clear: both;
+        }
+
+        .handmade {
+          text-align: right;
+          margin-top: 100px;
+        }
+
+        .handmade em {
+          font-family: "Shadows Into Light", cursive;
+          font-size: 1.25em;
+          margin-left: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <div class="left">
+        <div class="name-hero">
+          <div class="me-img mb-2 shadow-lg"></div>
+          <div class="name-text">
+            <h1>Naruedon <em>Yimlamai</em></h1>
+            <h4>Laravel Programmer / System Analysis</h4>
+            <p>Bangkok, Thailand</p>
+            <p>naruedon123@gmail.com</p>
+            <p>(091) 878-0627</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <section>
+            <p class="indented">
+              I am a <em id="age"></em> years old Junior Developer with
+              expertise in databases, PHP, and MVC structure. Currently serving
+              as a Fullstack Programmer at Orange Technology Solution Co., Ltd.,
+              I specialize in the use of Laravel Framework. My project
+              experience spans various business domains, including Multi-Level
+              Marketing, Stock Management, Product Presentation, and Backoffice
+              Systems. Known for being a fast learner and cooperative team
+              member, I am eager to contribute my skills to dynamic and
+              challenging projects in the development field.
+            </p>
+            <!-- <p>
+              Raised $78,000 in early stage funding, created initial design
+              concepts, and oversaw initial development. Currently oversee and
+              maintain all front end code and server functionality.
+            </p>
+            <p>
+              Spring 2012 - Winter 2015 |
+              <em>PadMatcher Inc. | CTO, Co-Founder</em>
+            </p>
+            <p>
+              Raised $78,000 in early stage funding, created initial design
+              concepts, and oversaw initial development. Oversaw and maintained
+              all front end code and server functionality.
+            </p>
+            <p>
+              Fall 2011 - Fall 2013 |
+              <em>Penrose Realty llc. | Desinger & Assistant</em>
+            </p>
+            <p>
+              Responsible for all technical areas. Maintain servers, computers,
+              and provide in office technical support. Rebranded company from
+              ground up including a fully responsive website.
+            </p> -->
+          </section>
+          <!-- <section>
+            <h1>Technical Skills</h1>
+            <ul class="skill-set">
+              <li>Mobile Development</li>
+              <li>Xamarin</li>
+              <li>CSS3</li>
+              <li>Adobe Photoshop</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JQUERY</li>
+              <li>UI Design</li>
+              <li>Company Branding</li>
+              <li>Responsive Web Design</li>
+            </ul>
+          </section>
+          <section>
+            <h1>References</h1>
+            <p>William Grand | <em>Grand Interactive, llc. | CEO</em></p>
+            <p>(617) 448-0910 | wgrand@grandinteractive.com</p>
+            <p>Eric Chauvin | <em>PadMatcher Inc. | CEO</em></p>
+            <p>(617) 448-0910 | eric@padmatcher.com</p>
+            <p>Chris Heller <em>Penrose Realty LLC. | Broker</em></p>
+            <p>(617) 794-4554 | chris@penroserealty.com</p>
+          </section>
+          <section>
+            <h1>Personal Interests</h1>
+            <ul class="skill-set">
+              <li>Faith</li>
+              <li>Biblical Studies</li>
+              <li>Playing Guitar</li>
+              <li>Song Writing</li>
+              <li>Health & Nutrition</li>
+              <li>Reading</li>
+            </ul>
+          </section>
+          <section>
+            <div class="handmade">
+              <p>handmade by <em> Anthony Adamski</em></p>
+            </div>
+          </section> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      console.log("ready!");
+    });
+  </script>
+</html>
