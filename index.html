@@ -101,6 +101,7 @@
 
       .name-hero h4 {
         font-size: 0.9em;
+        color: rgba(0, 0, 0, 0.75);
         text-align: center;
       }
 
@@ -135,6 +136,8 @@
 
       .inner p {
         color: rgba(0, 0, 0, 0.5);
+        text-align: justify;
+        text-justify: inter-word;
       }
 
       .inner p em {
@@ -143,10 +146,11 @@
       }
 
       .inner section {
-        margin: 100px auto;
+        margin: 20px auto;
+        /* margin-top: 50px; */
       }
 
-      ul {
+      ul.no-style {
         list-style-type: none;
         margin-top: -10px;
         max-width: 570px;
@@ -166,6 +170,10 @@
 
       .indented {
         text-indent: 40px;
+      }
+
+      #age {
+        color: rgba(0, 0, 0, 0.5) !important;
       }
 
       @media screen and (max-width: 48em) {
@@ -222,7 +230,7 @@
         <div class="name-hero">
           <div class="me-img mb-2 shadow-lg"></div>
           <div class="name-text">
-            <h1>Naruedon <em>Yimlamai</em></h1>
+            <h1>Naruedon Yimlamai</h1>
             <h4>Laravel Programmer / System Analysis</h4>
             <p>Bangkok, Thailand</p>
             <p>naruedon123@gmail.com</p>
@@ -233,8 +241,9 @@
       <div class="right">
         <div class="inner">
           <section>
+            <h1>Introduce</h1>
             <p class="indented">
-              I am a <em id="age"></em> years old Junior Developer with
+              I am a <em class="" id="age"></em> years old Junior Developer with
               expertise in databases, PHP, and MVC structure. Currently serving
               as a Fullstack Programmer at Orange Technology Solution Co., Ltd.,
               I specialize in the use of Laravel Framework. My project
@@ -244,70 +253,179 @@
               member, I am eager to contribute my skills to dynamic and
               challenging projects in the development field.
             </p>
-            <!-- <p>
-              Raised $78,000 in early stage funding, created initial design
-              concepts, and oversaw initial development. Currently oversee and
-              maintain all front end code and server functionality.
-            </p>
-            <p>
-              Spring 2012 - Winter 2015 |
-              <em>PadMatcher Inc. | CTO, Co-Founder</em>
-            </p>
-            <p>
-              Raised $78,000 in early stage funding, created initial design
-              concepts, and oversaw initial development. Oversaw and maintained
-              all front end code and server functionality.
-            </p>
-            <p>
-              Fall 2011 - Fall 2013 |
-              <em>Penrose Realty llc. | Desinger & Assistant</em>
-            </p>
-            <p>
-              Responsible for all technical areas. Maintain servers, computers,
-              and provide in office technical support. Rebranded company from
-              ground up including a fully responsive website.
-            </p> -->
-          </section>
-          <!-- <section>
-            <h1>Technical Skills</h1>
-            <ul class="skill-set">
-              <li>Mobile Development</li>
-              <li>Xamarin</li>
-              <li>CSS3</li>
-              <li>Adobe Photoshop</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JQUERY</li>
-              <li>UI Design</li>
-              <li>Company Branding</li>
-              <li>Responsive Web Design</li>
-            </ul>
-          </section>
-          <section>
-            <h1>References</h1>
-            <p>William Grand | <em>Grand Interactive, llc. | CEO</em></p>
-            <p>(617) 448-0910 | wgrand@grandinteractive.com</p>
-            <p>Eric Chauvin | <em>PadMatcher Inc. | CEO</em></p>
-            <p>(617) 448-0910 | eric@padmatcher.com</p>
-            <p>Chris Heller <em>Penrose Realty LLC. | Broker</em></p>
-            <p>(617) 794-4554 | chris@penroserealty.com</p>
-          </section>
-          <section>
-            <h1>Personal Interests</h1>
-            <ul class="skill-set">
-              <li>Faith</li>
-              <li>Biblical Studies</li>
-              <li>Playing Guitar</li>
-              <li>Song Writing</li>
-              <li>Health & Nutrition</li>
-              <li>Reading</li>
-            </ul>
-          </section>
-          <section>
-            <div class="handmade">
-              <p>handmade by <em> Anthony Adamski</em></p>
+            <div class="row">
+              <div class="col-8 border-end border-secondary mb-2">
+                <h1>Skills</h1>
+                <ul class="text-black-50">
+                  <li>
+                    Backend Development: PHP Laravel framework (Blade / PHP)
+                  </li>
+                  <li>Frontend Development: HTML, JavaScript and jQuery</li>
+                  <li>Database: MySQL and familiar with API integration</li>
+                  <li>Version Control: Using Git</li>
+                  <li>Web Development Tools: Bootstrap and CSS</li>
+                  <li>
+                    Server Management: Deploying projects to dedicated servers
+                    using Plesk and Direct Admin
+                  </li>
+                  <li>
+                    System Analysis: System AnalysisCreating ER-Diagrams,
+                    Waterfall Diagrams, and Flowchart Diagrams
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 mb-2">
+                <h1>Strengths</h1>
+                <ul class="text-black-50">
+                  <li>Fast Learner</li>
+                  <li>Friendly</li>
+                  <li>Cooperative</li>
+                  <li>Analytical</li>
+                  <li>Team Player</li>
+                  <li>Easy Going</li>
+                </ul>
+              </div>
+              <div class="col-8 border-end border-secondary mb-2">
+                <h1>Qualifications</h1>
+                <ul>
+                  <li class="text-black-50">
+                    Requirement Gathering: Proficient in extracting requirements
+                    from customers.
+                  </li>
+                  <li class="text-black-50">
+                    Documentation Skills: Able to summarize requirements into
+                    comprehensive design documents.
+                  </li>
+                  <li class="text-black-50">
+                    Development: Skilled in following design documents to
+                    develop software solutions.
+                  </li>
+                  <li class="text-black-50">
+                    Testing: Experienced in manual testing processes.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 mb-2">
+                <h1>Hobbies</h1>
+                <ul class="text-black-50">
+                  <li>Play/Watch Football</li>
+                  <li>Play Computer Game</li>
+                  <li>Listen to Music</li>
+                </ul>
+              </div>
+              <div class="col-8 border-end border-secondary mb-2">
+                <h1>Education</h1>
+                <ul class="text-black-50">
+                  <li>
+                    <p class="m-0">Rajamangala University of Technology Isan</p>
+                    <p class="m-0">
+                      Bachelor's Degree of Business Administration
+                    </p>
+                    <p class="m-0">Major: Information System</p>
+                    <p class="m-0 d-flex align-items-center">
+                      GPA:3.46
+                      <span class="ms-2 badge bg-warning text-reset">2021</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 mb-2">
+                <h1>Languages</h1>
+                <ul class="text-black-50">
+                  <li>
+                    <div class="d-flex align-items-center">
+                      THAI
+                      <span class="ms-2 badge bg-warning text-reset"
+                        >NATIVE</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      ENGLISH
+                      <span class="ms-2 badge bg-warning text-reset"
+                        >BASIC</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </section> -->
+            <div class="col-12 mt-2 border-top border-secondary">
+              <h1 class="mt-3">Work Experience</h1>
+              <div class="mb-2">
+                <p class="mb-0">
+                  <em>
+                    March 2023 - Present |<br />
+                    Orange Technology Solution Co.,Ltd. | Laravel Developer</em
+                  >
+                </p>
+                <ul class="text-black-50">
+                  <li>System Analysis / Developer: Proud Engineer Website</li>
+                  <li>
+                    System Analysis / Developer: JWash POS System + Backoffice
+                    System
+                  </li>
+                  <li>System Analysis / Developer: KaideeLotto</li>
+                  <li>
+                    System Analysis / Developer: Nova Medicine APIs / Backoffice
+                    Website
+                  </li>
+                  <li>
+                    System Analysis / Developer: Konraknalika Receipt System
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-2">
+                <p class="mb-0">
+                  <em
+                    >May 2021 - March 2023 |<br />
+                    Chai-Aek Development System Co.,Ltd. | Laravel Developer</em
+                  >
+                </p>
+                <ul class="text-black-50">
+                  <li>Debugger / Developer: DocterJel - Member System</li>
+                  <li>
+                    System Analysis / Developer: OrganicsCosme - Stock System
+                  </li>
+                  <li>Debugger / Developer: FDA - Surveillance System</li>
+                  <li>Debugger / Developer: FDA - Sample Analysis System</li>
+                  <li>Debugger / Developer: FDA - GDP e-Inspection System</li>
+                  <li>
+                    Debugger / Developer: Spider Planet Co., Ltd. - Life
+                    Insurance Analysis System
+                  </li>
+                  <li>
+                    System Analysis / Developer: Dainy Group Co., Ltd. -
+                    Multi-Level-Marketing with Member System
+                  </li>
+                  <li>
+                    Debugger / Developer: Bumrungrad Hospital - medGene
+                    Personalized Report System
+                  </li>
+                  <li>
+                    System Analysis / Developer: DocterJel. - Telesales System
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-2">
+                <p class="mb-0">
+                  <em>
+                    July 2020 - October 2020 |<br />
+                    CAT Customer Service Office | IT Officer </em
+                  >(Intern Student)
+                </p>
+                <ul class="text-black-50">
+                  <li>IT Support</li>
+                  <li>Telesales</li>
+                  <li>Graphic Design</li>
+                  <li>Customer Support</li>
+                  <li>Network Planning</li>
+                  <li>Compare Promotion and create promotion plan</li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -325,7 +443,11 @@
   ></script>
   <script>
     $(document).ready(function () {
-      console.log("ready!");
+      var date1 = new Date("1999-02-16");
+      var date2 = new Date();
+
+      var age = date2.getFullYear() - date1.getFullYear();
+      $("#age").text(age);
     });
   </script>
 </html>
