@@ -4,17 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garfield - Resume</title>
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Protest+Strike"
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Font Awesome 7 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
     <style>
       *,
       *:before,
@@ -61,7 +72,7 @@
         position: fixed;
         width: 33.33%;
 
-        background-image: url("https://lh3.googleusercontent.com/d/19gZTC9sN8nRzILAA8Mud04EEwH_Hpy5g");
+        background-image: url("https://lh4.googleusercontent.com/d/19gZTC9sN8nRzILAA8Mud04EEwH_Hpy5g");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -177,10 +188,13 @@
         text-indent: 40px;
       }
 
-      #age {
-        color: rgba(0, 0, 0, 0.5) !important;
+      .text-black-custom {
+        color: rgba(0, 0, 0, 0.75) !important;
       }
 
+      #tech-stack div div p {
+        text-align: center;
+      }
       @media screen and (max-width: 48em) {
         .right,
         .left {
@@ -229,6 +243,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="wrapper clearfix">
       <div class="left">
@@ -238,205 +253,85 @@
             <h1>Naruedon Yimlamai</h1>
             <h4>Laravel Programmer / System Analysis</h4>
             <p>Bangkok, Thailand</p>
-            <p>naruedon123@gmail.com</p>
+            <p>
+              <a
+                style="text-decoration: none; color: rgba(0, 0, 0, 0.75)"
+                href="mailto:naruedon123@gmail.com"
+                >naruedon123@gmail.com</a
+              >
+            </p>
             <p>(091) 878-0627</p>
+            <p>Age : <span id="age"></span></p>
           </div>
         </div>
       </div>
       <div class="right">
         <div class="inner">
           <section>
-            <h1>Introduce</h1>
-            <p class="indented">
-              I am a <em class="" id="age"></em> years old Junior Developer with
-              expertise in databases, PHP, and MVC structure. Currently serving
-              as a Fullstack Programmer at ADEV Solutions Plus Co.,Ltd.,
-              I specialize in the use of Laravel Framework. My project
-              experience spans various business domains, including Multi-Level
-              Marketing, Stock Management, Product Presentation, and Backoffice
-              Systems. Known for being a fast learner and cooperative team
-              member, I am eager to contribute my skills to dynamic and
-              challenging projects in the development field.
+            <h1>Profile</h1>
+            <p style="word-wrap: break-word; hyphens: auto">
+              Fullstack Developer with Laravel, skilled in web & API
+              development, debugging, DevOps and system analysis. Experienced
+              across e-commerce, healthcare, logistics, corporate systems, and
+              Thai government web projects.
             </p>
             <div class="row">
-              <div class="col-8 border-end border-secondary mb-2">
-                <h1>Skills</h1>
-                <ul class="text-black-50">
-                  <li>Backend Development: PHP Laravel framework (PHP)</li>
-                  <li>
-                    Frontend Development: Blade Laravel , HTML, JavaScript and
-                    jQuery
-                  </li>
-                  <li>Database: MySQL and familiar with API integration</li>
-                  <li>Version Control: Git</li>
-                  <li>Web Development Tools: Bootstrap and CSS</li>
-                  <li>
-                    Server Management: Deploying projects to dedicated servers
-                    using Plesk and Direct Admin
-                  </li>
-                  <li>
-                    System Analysis: System Analysis, Creating ER-Diagrams,
-                    Waterfall Diagrams, and Flowchart Diagrams
-                  </li>
-                </ul>
+              <!-- Tech Stack -->
+              <div class="col-12 mb-2" id="tech-stack">
+                <h1>Tech Stack</h1>
+                <!-- Tech Stack content จะถูก jQuery เติม -->
               </div>
-              <div class="col-4 mb-2">
-                <h1>Strengths</h1>
-                <ul class="text-black-50">
-                  <li>Fast Learner</li>
-                  <li>Friendly</li>
-                  <li>Cooperative</li>
-                  <li>Analytical</li>
-                  <li>Team Player</li>
-                  <li>Easy Going</li>
-                </ul>
-              </div>
-              <div class="col-8 border-end border-secondary mb-2">
-                <h1>Qualifications</h1>
-                <ul>
-                  <li class="text-black-50">
-                    Requirement Gathering: Proficient in extracting requirements
-                    from customers.
-                  </li>
-                  <li class="text-black-50">
-                    Documentation Skills: Able to summarize requirements into
-                    comprehensive design documents.
-                  </li>
-                  <li class="text-black-50">
-                    Development: Skilled in following design documents to
-                    develop software solutions.
-                  </li>
-                  <li class="text-black-50">
-                    Testing: Experienced in manual testing processes.
-                  </li>
-                </ul>
-              </div>
-              <div class="col-4 mb-2">
+
+              <!-- Hobbies -->
+              <div class="col-6 border-end border-secondary mb-2" id="hobbies">
                 <h1>Hobbies</h1>
                 <ul class="text-black-50">
-                  <li>Play/Watch Football</li>
-                  <li>Play Computer Game</li>
-                  <li>Listen to Music</li>
+                  <!-- ถูกแทนด้วย jQuery -->
                 </ul>
               </div>
-              <div class="col-8 border-end border-secondary mb-2">
-                <h1>Education</h1>
-                <ul class="text-black-50">
-                  <li>
-                    <p class="m-0">Rajamangala University of Technology Isan</p>
-                    <p class="m-0">
-                      Bachelor's Degree of Business Administration
-                    </p>
-                    <p class="m-0">Major: Information System</p>
-                    <p class="m-0 d-flex align-items-center">
-                      GPA:3.46
-                      <span class="ms-2 badge bg-warning text-reset">2021</span>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-4 mb-2">
+
+              <!-- Languages -->
+              <div class="col-6 mb-2" id="languages">
                 <h1>Languages</h1>
                 <ul class="text-black-50">
-                  <li>
-                    <div class="d-flex align-items-center">
-                      THAI
-                      <span class="ms-2 badge bg-warning text-reset"
-                        >NATIVE</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="d-flex align-items-center">
-                      ENGLISH
-                      <span class="ms-2 badge bg-warning text-reset"
-                        >BASIC</span
-                      >
-                    </div>
-                  </li>
+                  <!-- ถูกแทนด้วย jQuery -->
                 </ul>
               </div>
-            </div>
-            <div class="col-12 mt-2 border-top border-secondary">
-              <h1 class="mt-3">Work Experience</h1>
-              <div class="mb-2"></div>
-                <p class="mb-0">
-                  <em>
-                    August 2024 - Present |<br />
-                    ADEV Solutions Plus Co.,Ltd. | Laravel Developer</em
-                  >
-                </p>
-                <ul class="text-black-50">
-                  <li>Debugger / Dev: Easypass E-Service Website</li>
-                  <li>Dev: AQA Aplication APIs</li>
+
+              <!-- Qualifications -->
+              <div
+                class="col-6 border-end border-secondary mb-2"
+                id="qualifications"
+              >
+                <h1>Qualifications</h1>
+                <ul>
+                  <!-- ถูกแทนด้วย jQuery -->
                 </ul>
               </div>
-              <div class="mb-2">
-                <p class="mb-0">
-                  <em>
-                    March 2023 - July 2024 |<br />
-                    Orange Technology Solution Co.,Ltd. | Laravel Developer</em
-                  >
-                </p>
+
+              <!-- Strengths -->
+              <div class="col-6 mb-2" id="strengths">
+                <h1>Strengths</h1>
                 <ul class="text-black-50">
-                  <li>SA / Dev / DevOps: Proud Engineering Website</li>
-                  <li>SA / Dev / DevOps: JWash POS Website</li>
-                  <li>SA / Dev / DevOps: KaideeLotto Website</li>
-                  <li>SA / Dev / DevOps: Nova Medicine APIs</li>
-                  <li>SA / Dev / DevOps: Konraknalika Receipt System</li>
-                  <li>Tester / Customer Cooperative: Nejavu Comic Webstore</li>
-                  <li>
-                    Tester / Customer Cooperative: SiamChina Logistic System
-                  </li>
-                  <li>
-                    Tester / Customer Cooperative: SK Sales Warehouse System
-                  </li>
-                  <li>SA / Dev / DevOps: E-Account Digital System</li>
+                  <!-- ถูกแทนด้วย jQuery -->
                 </ul>
               </div>
-              <div class="mb-2">
-                <p class="mb-0">
-                  <em
-                    >May 2021 - March 2023 |<br />
-                    Chai-Aek Development System Co.,Ltd. | Laravel Developer</em
-                  >
-                </p>
+
+              <!-- Education -->
+              <div class="col-12 mb-2" id="education">
+                <h1>Education</h1>
                 <ul class="text-black-50">
-                  <li>Debugger / Dev: DocterJel - Member System</li>
-                  <li>SA / Dev: OrganicsCosme - Stock System</li>
-                  <li>Debugger / Dev: FDA - Surveillance System</li>
-                  <li>Debugger / Dev: FDA - Sample Analysis System</li>
-                  <li>Debugger / Dev: FDA - GDP e-Inspection System</li>
-                  <li>
-                    Debugger / Dev: Spider Planet Co., Ltd. - Life Insurance
-                    Analysis System
-                  </li>
-                  <li>
-                    SA / Dev: Dainy Group Co., Ltd. - Multi-Level-Marketing
-                    System
-                  </li>
-                  <li>
-                    Debugger / Dev: Bumrungrad Hospital - medGene Personalized
-                    Report System
-                  </li>
-                  <li>SA / Dev: DocterJel. - Telesales System</li>
+                  <!-- ถูกแทนด้วย jQuery -->
                 </ul>
               </div>
-              <div class="mb-2">
-                <p class="mb-0">
-                  <em>
-                    July 2020 - October 2020 |<br />
-                    CAT Customer Service Office | IT Officer </em
-                  >(Intern Student)
-                </p>
-                <ul class="text-black-50">
-                  <li>IT Support</li>
-                  <li>Telesales</li>
-                  <li>Graphic Design</li>
-                  <li>Customer Support</li>
-                  <li>Network Planning</li>
-                  <li>Compare Promotion and create promotion plan</li>
-                </ul>
+
+              <!-- Work Experience -->
+              <div
+                class="col-12 mt-2 border-top border-secondary"
+                id="work-experience"
+              >
+                <h1 class="mt-3">Work Experience</h1>
+                <!-- ถูกแทนด้วย jQuery -->
               </div>
             </div>
           </section>
@@ -457,11 +352,119 @@
   ></script>
   <script>
     $(document).ready(function () {
+      // AGE CALCULATION
       var date1 = new Date("1999-02-16");
       var date2 = new Date();
-
       var age = date2.getFullYear() - date1.getFullYear();
       $("#age").text(age);
+
+      $.getJSON("detail.json", function (resumeData) {
+        // --- Tech Stack ---
+        var $techStackContainer = $("#tech-stack");
+        $.each(resumeData.TechStack, function (category, items) {
+          var $categoryDiv = $("<div>").addClass("tech-category mb-2");
+          $categoryDiv.append(
+            $("<p>")
+              .addClass("text-black-custom")
+              .text(category.replace(/([A-Z])/g, " $1").trim())
+          );
+
+          var $itemsDiv = $("<div>").css({
+            display: "flex",
+            "flex-wrap": "wrap",
+            gap: "10px",
+            "font-size": "12px",
+          });
+
+          items.forEach(function (item) {
+            var $itemDiv = $("<div>").css({
+              "text-align": "center",
+              width: "60px",
+            });
+            // ใส่ icon
+            $itemDiv.append(
+              $("<img>")
+                .attr("src", item.icon)
+                .css({ width: "32px", height: "32px" })
+            );
+            // ใส่ชื่อเทคโนโลยี
+            $itemDiv.append($("<p>").text(item.name));
+
+            $itemsDiv.append($itemDiv);
+          });
+
+          $categoryDiv.append($itemsDiv);
+          $techStackContainer.append($categoryDiv);
+        });
+
+        // --- Strengths ---
+        var $strengths = resumeData.Strengths.map((s) => $("<li>").text(s));
+        $("#strengths ul").empty().append($strengths);
+
+        // --- Hobbies ---
+        var $hobbies = resumeData.Hobbies.map((h) => $("<li>").text(h));
+        $("#hobbies ul").empty().append($hobbies);
+
+        // --- Languages ---
+        var $languages = resumeData.Languages.map(function (lang) {
+          return $("<li>").append(
+            $("<div>")
+              .addClass("d-flex align-items-center")
+              .text(lang.Language)
+              .append(
+                $("<span>")
+                  .addClass("ms-2 badge bg-warning text-reset")
+                  .text(lang.Proficiency)
+              )
+          );
+        });
+        $("#languages ul").empty().append($languages);
+
+        // --- Qualifications ---
+        var $qualifications = resumeData.Qualifications.map((q) =>
+          $("<li>").addClass("text-black-50").text(q)
+        );
+        $("#qualifications ul").empty().append($qualifications);
+
+        // --- Education ---
+        var edu = resumeData.Education[0];
+        var $edu = $("<li>").append(
+          $("<p>").addClass("m-0").text(edu.School),
+          $("<p>").addClass("m-0").text(edu.Degree),
+          $("<p>")
+            .addClass("m-0")
+            .text("Major: " + edu.Major),
+          $("<p>")
+            .addClass("m-0 d-flex align-items-center")
+            .append(
+              edu.GPA,
+              $("<span>")
+                .addClass("ms-2 badge bg-warning text-reset")
+                .text(edu.Year)
+            )
+        );
+        $("#education ul").empty().append($edu);
+
+        // --- Work Experience ---
+        var $workContainer = $("#work-experience")
+          .empty()
+          .append($("<h1>").addClass("mt-3").text("Work Experience"));
+        resumeData.WorkExperience.forEach(function (work) {
+          $workContainer.append(
+            $("<p>")
+              .addClass("mb-0")
+              .append(
+                $("<em>").html(
+                  work.Period + " |<br>" + work.Company + " | " + work.Role
+                )
+              ),
+            $("<ul>")
+              .addClass("text-black-50")
+              .append(work.Responsibilities.map((r) => $("<li>").text(r))),
+            $("<div>").addClass("mb-2")
+          );
+        });
+      }); // end getJSON
     });
   </script>
 </html>

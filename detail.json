@@ -1,0 +1,141 @@
+{
+  "TechStack": {
+    "Backend": [
+      { "name": "Laravel", "icon": "/icons/laravel.svg" },
+      { "name": "Lumen", "icon": "/icons/lumen.svg" },
+      { "name": "REST API", "icon": "/icons/rest-api.svg" }
+    ],
+    "Frontend": [
+      { "name": "Blade", "icon": "/icons/blade.svg" },
+      { "name": "HTML5", "icon": "/icons/html5.svg" },
+      { "name": "CSS3", "icon": "/icons/css3.svg" },
+      { "name": "JavaScript", "icon": "/icons/javascript.svg" },
+      { "name": "SCSS/SASS", "icon": "/icons/sass.svg" },
+      { "name": "jQuery", "icon": "/icons/jquery.svg" }
+    ],
+    "UserInterface": [
+      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+      { "name": "Tailwind", "icon": "/icons/tailwind.svg" }
+    ],
+    "Database": [
+      { "name": "MySQL", "icon": "/icons/mysql.svg" },
+      { "name": "PostgreSQL", "icon": "/icons/postgresql.svg" },
+      { "name": "SQL Server", "icon": "/icons/sql-server.svg" },
+      { "name": "MariaDB", "icon": "/icons/mariadb.svg" }
+    ],
+    "VersionControl": [
+      { "name": "Git", "icon": "/icons/git.svg" },
+      { "name": "GitHub", "icon": "/icons/github.svg" },
+      { "name": "GitLab", "icon": "/icons/gitlab.svg" }
+    ],
+    "ServerDeployment": [
+      { "name": "Dedicated Hosting", "icon": "/icons/server.svg" },
+      { "name": "Plesk", "icon": "/icons/plesk.svg" },
+      { "name": "DirectAdmin", "icon": "/icons/directadmin.svg" },
+      { "name": "cPanel", "icon": "/icons/cpanel.svg" }
+    ],
+    "TestingDebugging": [
+      { "name": "Postman", "icon": "/icons/postman.svg" },
+      { "name": "Insomnia", "icon": "/icons/insomnia.svg" },
+      { "name": "Hoppscotch", "icon": "/icons/hoppscotch.svg" },
+      { "name": "DevTools", "icon": "/icons/devtools.svg" }
+    ],
+    "SystemAnalysisDesign": [
+      { "name": "ERD/UML", "icon": "/icons/erd-uml.svg" },
+      { "name": "Flowchart", "icon": "/icons/flowchart.svg" },
+      { "name": "Waterfall", "icon": "/icons/waterfall.svg" }
+    ]
+  },
+  "Strengths": [
+    "Rapid Learner – Quickly adapts to new tools, technologies, and workflows",
+    "Approachable & Friendly – Builds positive relationships with colleagues and clients",
+    "Collaborative – Works effectively in team environments to achieve shared goals",
+    "Analytical Thinker – Able to assess situations, identify issues, and propose solutions",
+    "Team-Oriented – Contributes to a supportive and cooperative work atmosphere",
+    "Easy-Going – Maintains composure and flexibility under pressure"
+  ],
+  "Hobbies": ["Play/Watch Football", "Play Computer Game", "Listen to Music"],
+  "Languages": [
+    {
+      "Language": "THAI",
+      "Proficiency": "NATIVE"
+    },
+    {
+      "Language": "ENGLISH",
+      "Proficiency": "BASIC"
+    }
+  ],
+  "Qualifications": [
+    "Requirement Analysis & Client Communication",
+    "Technical Documentation & Design Specification",
+    "Software Development (Based on Requirements)",
+    "Manual Testing & Quality Assurance",
+    "Problem-Solving & Debugging",
+    "Cross-Functional Team Collaboration"
+  ],
+  "Education": [
+    {
+      "School": "Rajamangala University of Technology Isan",
+      "Degree": "Bachelor's Degree of Business Administration",
+      "Major": "Information System",
+      "GPA": 3.46,
+      "Year": 2021
+    }
+  ],
+  "WorkExperience": [
+    {
+      "Period": "August 2024 - Present",
+      "Company": "ADEV Solutions Plus Co.,Ltd.",
+      "Role": "Laravel Developer",
+      "Responsibilities": [
+        "Debugger / Dev: Easypass E-Service Website",
+        "Dev: AQA Aplication APIs"
+      ]
+    },
+    {
+      "Period": "March 2023 - July 2024",
+      "Company": "Orange Technology Solution Co.,Ltd.",
+      "Role": "Laravel Developer",
+      "Responsibilities": [
+        "SA / Dev / DevOps: Proud Engineering Website",
+        "SA / Dev / DevOps: JWash POS Website",
+        "SA / Dev / DevOps: KaideeLotto Website",
+        "SA / Dev / DevOps: Nova Medicine APIs",
+        "SA / Dev / DevOps: Konraknalika Receipt System",
+        "Tester / Customer Cooperative: Nejavu Comic Webstore",
+        "Tester / Customer Cooperative: SiamChina Logistic System",
+        "Tester / Customer Cooperative: SK Sales Warehouse System",
+        "SA / Dev / DevOps: E-Account Digital System"
+      ]
+    },
+    {
+      "Period": "May 2021 - March 2023",
+      "Company": "Chai-Aek Development System Co.,Ltd.",
+      "Role": "Laravel Developer",
+      "Responsibilities": [
+        "Debugger / Dev: DocterJel - Member System",
+        "SA / Dev: OrganicsCosme - Stock System",
+        "Debugger / Dev: FDA - Surveillance System",
+        "Debugger / Dev: FDA - Sample Analysis System",
+        "Debugger / Dev: FDA - GDP e-Inspection System",
+        "Debugger / Dev: Spider Planet Co., Ltd. - Life Insurance Analysis System",
+        "SA / Dev: Dainy Group Co., Ltd. - Multi-Level-Marketing System",
+        "Debugger / Dev: Bumrungrad Hospital - medGene Personalized Report System",
+        "SA / Dev: DocterJel. - Telesales System"
+      ]
+    },
+    {
+      "Period": "July 2020 - October 2020",
+      "Company": "CAT Customer Service Office",
+      "Role": "IT Officer (Intern Student)",
+      "Responsibilities": [
+        "IT Support",
+        "Telesales",
+        "Graphic Design",
+        "Customer Support",
+        "Network Planning",
+        "Compare Promotion and create promotion plan"
+      ]
+    }
+  ]
+}
