@@ -1,17 +1,14 @@
 {
   "TechStack": {
     "Backend": [
-      { "name": "Laravel", "icon": "/icons/laravel.svg" },
+      { "name": "PHP", "icon": "/icons/php.svg" },
       { "name": "Lumen", "icon": "/icons/lumen.svg" },
-      { "name": "REST API", "icon": "/icons/rest-api.svg" }
+      { "name": "Laravel", "icon": "/icons/laravel.svg" },
+      { "name": ".NET", "icon": "/icons/dotnet.svg" }
     ],
     "Frontend": [
-      { "name": "Blade", "icon": "/icons/blade.svg" },
       { "name": "HTML5", "icon": "/icons/html5.svg" },
-      { "name": "CSS3", "icon": "/icons/css3.svg" },
-      { "name": "JavaScript", "icon": "/icons/javascript.svg" },
-      { "name": "SCSS/SASS", "icon": "/icons/sass.svg" },
-      { "name": "jQuery", "icon": "/icons/jquery.svg" }
+      { "name": "Blade", "icon": "/icons/blade.svg" }
     ],
     "UserInterface": [
       { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
@@ -21,7 +18,8 @@
       { "name": "MySQL", "icon": "/icons/mysql.svg" },
       { "name": "PostgreSQL", "icon": "/icons/postgresql.svg" },
       { "name": "SQL Server", "icon": "/icons/sql-server.svg" },
-      { "name": "MariaDB", "icon": "/icons/mariadb.svg" }
+      { "name": "MariaDB", "icon": "/icons/mariadb.svg" },
+      { "name": "Oracle", "icon": "/icons/oracle.svg" }
     ],
     "VersionControl": [
       { "name": "Git", "icon": "/icons/git.svg" },
