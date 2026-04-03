@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -240,6 +240,83 @@
           margin-left: 5px;
         }
       }
+
+      @media print {
+        html,
+        body {
+          height: auto !important;
+          background: #fff !important;
+        }
+
+        .wrapper {
+          height: auto !important;
+        }
+
+        /* ===== FIX layout หลัก ===== */
+        .left,
+        .right {
+          position: relative !important;
+          float: none !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        .left {
+          background: none !important;
+          border: none !important;
+        }
+
+        /* ===== FIX ตัวพังจริง ===== */
+        .name-hero {
+          position: relative !important;
+          top: auto !important;
+          bottom: auto !important;
+          left: auto !important;
+          right: auto !important;
+          height: auto !important;
+          margin-bottom: 20px;
+        }
+
+        /* ===== Bootstrap grid → บังคับ 1 column ===== */
+        .col-6,
+        .col-12 {
+          width: 100% !important;
+          flex: 0 0 100% !important;
+          max-width: 100% !important;
+        }
+
+        .row {
+          display: block !important;
+        }
+
+        /* ===== spacing ===== */
+        .inner {
+          padding: 10px !important;
+        }
+
+        /* ===== ป้องกัน content แตกหน้า ===== */
+        section,
+        ul,
+        li,
+        .tech-category {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+
+        h1 {
+          break-after: avoid;
+        }
+
+        /* ===== ซ่อนสิ่งไม่จำเป็น ===== */
+        button {
+          display: none !important;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 20mm;
+      }
     </style>
   </head>
 
@@ -365,7 +442,7 @@
           $categoryDiv.append(
             $("<p>")
               .addClass("text-black-custom")
-              .text(category.replace(/([A-Z])/g, " $1").trim())
+              .text(category.replace(/([A-Z])/g, " $1").trim()),
           );
 
           var $itemsDiv = $("<div>").css({
@@ -384,7 +461,7 @@
             $itemDiv.append(
               $("<img>")
                 .attr("src", item.icon)
-                .css({ width: "32px", height: "32px" })
+                .css({ width: "32px", height: "32px" }),
             );
             // ใส่ชื่อเทคโนโลยี
             $itemDiv.append($("<p>").text(item.name));
@@ -413,15 +490,15 @@
               .append(
                 $("<span>")
                   .addClass("ms-2 badge bg-warning text-reset")
-                  .text(lang.Proficiency)
-              )
+                  .text(lang.Proficiency),
+              ),
           );
         });
         $("#languages ul").empty().append($languages);
 
         // --- Qualifications ---
         var $qualifications = resumeData.Qualifications.map((q) =>
-          $("<li>").addClass("text-black-50").text(q)
+          $("<li>").addClass("text-black-50").text(q),
         );
         $("#qualifications ul").empty().append($qualifications);
 
@@ -439,8 +516,8 @@
               edu.GPA,
               $("<span>")
                 .addClass("ms-2 badge bg-warning text-reset")
-                .text(edu.Year)
-            )
+                .text(edu.Year),
+            ),
         );
         $("#education ul").empty().append($edu);
 
@@ -454,13 +531,13 @@
               .addClass("mb-0")
               .append(
                 $("<em>").html(
-                  work.Period + " |<br>" + work.Company + " | " + work.Role
-                )
+                  work.Period + " |<br>" + work.Company + " | " + work.Role,
+                ),
               ),
             $("<ul>")
               .addClass("text-black-50")
               .append(work.Responsibilities.map((r) => $("<li>").text(r))),
-            $("<div>").addClass("mb-2")
+            $("<div>").addClass("mb-2"),
           );
         });
       });
