@@ -157,7 +157,8 @@
         font-size: 1.75em;
       }
 
-      .inner p {
+      .inner p,
+      .name-text p span {
         color: rgba(0, 0, 0, 0.5);
         text-align: justify;
         text-justify: inter-word;
@@ -261,7 +262,7 @@
           background: #fff !important;
         }
 
-        #resume-link-section {
+        .show-on-print-section {
           display: block !important;
         }
 
@@ -357,9 +358,39 @@
             </p>
             <p>(091) 878-0627</p>
             <p>Age : <span id="age"></span></p>
-            <p id="resume-link-section" style="display: none">
+            <p class="show-on-print-section" style="display: none">
+              Location :
+              <span id="location">Bangkok, Nonthaburi, Nakhonratchasima</span>
+            </p>
+            <p class="show-on-print-section" style="display: none">
+              Current Salary :
+              <span id="current-salary">THB 38,000/month</span>
+            </p>
+            <p class="show-on-print-section" style="display: none">
+              Expected Salary :
+              <span id="expected-salary">THB 60,000/month (Negotiable)</span>
+            </p>
+            <p class="show-on-print-section" style="display: none">
+              Contract Type :
+              <span id="contract-type">Full-time</span>
+            </p>
+            <p class="show-on-print-section" style="display: none">
+              Work Arrangement :
+              <span id="work-arrangement">Hybrid, WFH</span>
+            </p>
+            <p class="show-on-print-section" style="display: none">
+              Available Start Date :
+              <span id="available-start-date"
+                >Available to start 1 month after signing the contract</span
+              >
+            </p>
+            <p class="show-on-print-section" style="display: none">
               Resume (on web) :
               <span id="resume-link">https://naruedon12378.github.io/</span>
+            </p>
+            <p class="show-on-print-section" style="display: none">
+              Additional documents (Google Drive):
+              <span id="additional-documents">https://shorturl.at/lCwBQ</span>
             </p>
           </div>
         </div>
