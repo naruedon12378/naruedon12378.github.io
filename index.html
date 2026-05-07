@@ -339,6 +339,27 @@
           text-align: justify;
           text-justify: inter-word;
         }
+
+        /* ===== Work Experience แยกหน้าใหม่ ===== */
+        #work-experience {
+          page-break-before: always;
+          break-before: page;
+        }
+
+        /* ===== 1 บริษัท = 1 block ห้ามแตก ===== */
+        .work-block {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          margin-bottom: 20px;
+        }
+
+        /* ===== ถ้า block ไม่พอ → ย้ายทั้ง block ===== */
+        .work-block ul,
+        .work-block li,
+        .work-block p {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
       }
 
       @page {
@@ -410,10 +431,13 @@
           <section>
             <h1>Profile</h1>
             <p style="word-wrap: break-word; hyphens: auto">
-              Fullstack Developer, skilled in web & API development, debugging,
-              DevOps and system analysis. Experienced across e-commerce,
-              healthcare, logistics, corporate systems, and Thai government web
-              projects.
+              Fullstack Developer with experience in backend/API development,
+              system analysis, debugging, and deployment across enterprise,
+              healthcare, logistics, and government projects. Skilled in
+              Laravel, .NET, and database-driven systems with strong
+              problem-solving and cross-functional collaboration abilities.
+              Passionate about building scalable solutions and continuously
+              improving both technical and business workflows.
             </p>
             <div class="row">
               <!-- Tech Stack -->
@@ -590,7 +614,9 @@
           .empty()
           .append($("<h1>").addClass("mt-3").text("Work Experience"));
         resumeData.WorkExperience.forEach(function (work) {
-          $workContainer.append(
+          var $workBlock = $("<div>").addClass("work-block");
+
+          $workBlock.append(
             $("<p>")
               .addClass("mb-0")
               .append(
@@ -598,11 +624,15 @@
                   work.Period + " |<br>" + work.Company + " | " + work.Role,
                 ),
               ),
+          );
+
+          $workBlock.append(
             $("<ul>")
               .addClass("text-black-50")
               .append(work.Responsibilities.map((r) => $("<li>").text(r))),
-            $("<div>").addClass("mb-2"),
           );
+
+          $workContainer.append($workBlock);
         });
       });
     });
