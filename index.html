@@ -265,6 +265,10 @@
           display: block !important;
         }
 
+        .hide-on-print-section {
+          display: none !important;
+        }
+
         .wrapper {
           height: auto !important;
         }
@@ -519,7 +523,7 @@
             });
             // ใส่ icon
             $itemDiv.append(
-              $("<img>")
+              $("<img class='hide-on-print-section'>")
                 .attr("src", item.icon)
                 .css({ width: "32px", height: "32px" }),
             );
